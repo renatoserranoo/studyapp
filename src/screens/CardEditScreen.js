@@ -113,7 +113,7 @@ const CardEditScreen = ({ route, navigation }) => {
 const styles = StyleSheet.create({
   container: {
       flex: 1,
-      paddingTop: 40,
+      paddingTop: 30,
       padding: 20,
       backgroundColor: '#000000',
   },

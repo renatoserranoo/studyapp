@@ -17,7 +17,7 @@ const TasksDueSoonScreen = () => {
     <View style={styles.card}> 
       <Text style={styles.cardTitle}>{item.title}</Text>
       <Text style={{ color: '#ffffff', marginBottom: 4 }}>{item.notes}</Text>
-      <Text> Data/Hora de Término: {new Date(item.dueDate).toLocaleDateString}</Text>
+      <Text style={{ color: '#ffffff' }}> Data/Hora de Término: {new Date(item.dueDate).toLocaleDateString}</Text>
     </View>
   )
 
@@ -36,26 +36,24 @@ const styles = StyleSheet.create({
   container: {
       flex: 1,
       padding: 10,
-      backgroundColor: '#f0f8ff',
+      backgroundColor: '#000000',
   },
   header: {
-      fontSize: 24,
+      fontSize: 22,
       fontWeight: 'bold',
       marginBottom: 20,
       textAlign: 'center',
+      color: '#ffffff',
   },
   card: {
-      backgroundColor: '#ffffff',
+      backgroundColor: '#1b1b1b',
       padding: 20,
       margin: 8,
       borderRadius: 10,
-      shadowColor: '#000',
-      shadowOffset: { width: 0, height: 2 },
-      shadowOpacity: 0.1,
-      shadowRadius: 6,
       elevation: 3,
   },
   cardTitle: {
+      color: '#ffffff',
       fontSize: 18,
       fontWeight: 'bold',
   }

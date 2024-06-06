@@ -15,7 +15,7 @@ export default function App(){
             <NavigationContainer>
                 <Stack.Navigator initialRouteName="CardList"
                 screenOptions={{
-                    headerStyle: { backgroundColor: '#000000' }, headerTintColor: '#ffc200', headerTitleStyle: { fontSize: 22 } }}>
+                    headerStyle: { backgroundColor: '#000000' }, headerTintColor: '#ffc200', headerTitleStyle: { fontSize: 20 } }}>
                     <Stack.Screen name="CardList" component={CardListScreen} options={{ title: 'Study Cards' }} />
                     <Stack.Screen name="CardEdit" component={CardEditScreen} options={{ title: 'Editar Card' }} />
                     <Stack.Screen name="TasksDueSoon" component={TasksDueSoonScreen} options={{ title: 'Tasks a Vencer'}} />

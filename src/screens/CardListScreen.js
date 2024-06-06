@@ -6,7 +6,6 @@ const CardListScreen = ({ navigation }) => {
 
     const { cards, deleteCard } = useContext(StudyCardsContext)
 
-    // filtrar cards por status
     const inProgressCards = cards.filter(card => card.status === 'in_progress')
     const concludedCards = cards.filter(card => card.status === 'done')
     const backlogCards = cards.filter(card => card.status === 'backlog')
@@ -89,14 +88,15 @@ const styles = StyleSheet.create({
       shadowRadius: 6,
       elevation: 3,
       minWidth: 200,
+      maxHeight: 157,
   },
   dueSoonButton: {
       backgroundColor: '#ff6347',
-      padding: 10,
+      padding: 12,
       borderRadius: 15,
       justifyContent: 'center',
       alignItems: 'center',
-      marginBottom: 20,
+      marginVertical: 10,
     },
   dueSoonButtonText: {
       color: '#ffffff',
@@ -135,8 +135,7 @@ const styles = StyleSheet.create({
   sectionTitle: {
       fontSize: 24,
       fontWeight: 'bold',
-      marginTop: 10,
-      marginBottom: 10,
+      marginVertical: 10,
       marginLeft: 10,
       color: '#ffffff',
   },
